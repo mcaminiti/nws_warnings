@@ -18,4 +18,17 @@ Home Assistant Custom Component for National Weather Service Warnings
 # Sensors Activated
 NWS Warnings will show a total count of alerts present for your county / zone.
 
+![UI](images/nws_warnings.png?raw=true "NWS Warnings")
+![UI](images/nws_warnings_attributes.png?raw=true "NWS Warnings Attributes")
 
+# Current Monitors and Severitys
+- Severe Thunderstorm Warning
+- Tornado Watch
+- Tornado Warning
+- Winter Storm Warning
+
+# Example Template Sensors / Customizations
+TBD
+
+# Example Automations
+TBD
