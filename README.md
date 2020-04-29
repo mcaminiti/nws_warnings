@@ -31,4 +31,29 @@ NWS Warnings will show a total count of alerts present for your county / zone.
 TBD
 
 # Example Automations
-TBD
+```
+        ##########################################################
+        ## Tornado Warning
+        ##########################################################
+
+- alias: Weather - Tornado Warning
+
+  trigger:
+    - platform: state
+      entity_id: sensor.nws_tornado_warning
+      from: "0"
+      to: "1"
+
+  action:
+    - service: notify.mobile_app_USER1_iphone
+      data:
+       title: "Tornado Warning"
+       message: "NWS -- {{ states.sensor.nws_warnings.attributes.tornado_warning_headline }}"
+       data:
+         push:
+           sound:
+             name: default
+             critical: 1
+             volume: 1.0
+             
+```
