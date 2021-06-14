@@ -4,6 +4,8 @@ Home Assistant Custom Component for National Weather Service Warnings
 # Installation
 1. Place folder (nws_warnings) in custom_components folder
 
+As of 2016.6 the updated manifest.json file is required for proper loading. 
+
 # Configuration
 1. Lookup Zone or County Code on NWS site https://www.weather.gov/lsx/
 - Type in City and State and perform a lookup.  Scroll down and pick "ZONE AREA FORCAST FOR XXXXXX COUNTY".  
